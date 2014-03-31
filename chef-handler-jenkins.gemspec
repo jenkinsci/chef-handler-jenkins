@@ -1,6 +1,6 @@
 Gem::Specification.new do |g|
   g.name = 'chef-handler-jenkins'
-  g.version = '0.1'
+  g.version = '0.2'
 
   g.summary = 'Chef report handler for tracking with Jenkins'
   g.description = 'Track deployment of files through Jenkins'
