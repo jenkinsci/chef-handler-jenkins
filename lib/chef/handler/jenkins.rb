@@ -1,10 +1,10 @@
 require "chef/log"
 require 'digest/md5'
 
-module Chef
-  module Handler
+class Chef
+  class Handler
     #noinspection RubyStringKeysInHashInspection
-    class TrackingHandler < Chef::Handler
+    class Jenkins < Chef::Handler
       def initialize(config)
         @config = config
         raise ArgumentError, 'Jenkins URL is not specified' unless @config[:url]
