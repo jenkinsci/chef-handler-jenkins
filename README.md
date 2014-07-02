@@ -20,7 +20,8 @@ This approach is best suited if you own the operation environment and want to do
 Use [chef_handler cookbook](http://community.opscode.com/cookbooks/chef_handler) and activate this handler via your recipe:
 
     chef_gem 'chef-handler-jenkins'
-    
+    require 'chef/handler/jenkins'
+
     chef_handler 'Chef::Handler::Jenkins' do
       source 'chef/handler/jenkins'
       arguments :url => 'http://myserver.acme.com/jenkins'
