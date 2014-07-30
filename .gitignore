@@ -1,1 +1,6 @@
 *.gem
+.rvmrc
+Gemfile.lock
+.kitchen/
+.kitchen.local.yml
+Berksfile.lock
