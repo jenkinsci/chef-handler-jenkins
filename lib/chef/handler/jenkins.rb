@@ -30,14 +30,14 @@ class Chef
             # res.checksum is SHA1 sum
           end
 
-          if res.class == Chef::Resource::SaladJenkinsTracking
-            # TODO is this a good way to check the class name?
-            updates << {
-                "path" => res.path,
-                "md5" => res.checksum,
-                "type" => res.class.name
-            }
-          end
+#          if res.class == Chef::Resource::SaladJenkinsTracking
+#            # TODO is this a good way to check the class name?
+#            updates << {
+#                "path" => res.path,
+#                "md5" => res.checksum,
+#                "type" => res.class.name
+#            }
+#          end
         end
 
         # add envelop to the data
