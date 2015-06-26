@@ -24,7 +24,7 @@ class Chef
             updates << {
               "path" => res.path,
               "action" => res.action,
-              "md5" => Digest::MD5.hexdigest(IO.read(res.path)),
+              "md5" => Digest::MD5.file(res.path).hexdigest,
               "type" => res.class.name
             }
             # res.checksum is SHA1 sum
