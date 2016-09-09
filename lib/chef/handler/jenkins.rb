@@ -85,7 +85,7 @@ class Chef
       end
 
       def submit_jenkins(run_status, env)
-        r = Chef::REST.new(@config[:url])
+        r = Chef::ServerAPI.new(@config[:url])
         r.post("chef/report", env)
       end
     end
